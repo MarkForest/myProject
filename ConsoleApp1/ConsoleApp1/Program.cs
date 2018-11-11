@@ -12,6 +12,17 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             someFunc2();
+            someFuncBest();
+        }
+
+        private static void someFuncBest()
+        {
+            foreach (var item in "Анатолий ты мудак")
+            {
+                Console.WriteLine(item);
+                Thread.Sleep(500);
+                Console.Beep(50, 500);
+            }
         }
 
         private static void someFunc2()
